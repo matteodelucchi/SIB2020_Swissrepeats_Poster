@@ -1,3 +1,6 @@
+## Personal files
+*.code-workspace
+
 ## Pdf
 *.pdf
 
