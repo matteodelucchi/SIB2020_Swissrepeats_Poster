@@ -12,9 +12,9 @@
 
 %% Setting the width of columns
 % Left column
-%\setlength{\leftbarwidth}{0.25\paperwidth}
+\setlength{\leftbarwidth}{0\paperwidth}
 % Right column
-%\setlength{\rightbarwidth}{0.25\paperwidth}
+\setlength{\rightbarwidth}{0.33\paperwidth}
 
 %% Setting the column margins
 % Horizontal margin
@@ -68,20 +68,31 @@
 }{
 %%%% Bottom space
 
-%% QR code
-% \qrcode{img/qrcode}{img/smartphoneWhite}{
-% \textbf{Take a picture} to
-% \\download the full paper
-% }
-% Smartphone icon
-% Author: Freepik
-% Retrieved from: https://www.flaticon.com/free-icon/smartphone_65680
 
-% Compact QR code (comment the previous command and uncomment this one to switch)
-\compactqrcode{img/qrcode}{
-\textbf{Take a picture} to
-\\download the full paper
-}
+
+
+%% This fills the space between the content and the logo
+\vfill
+
+%% Paper reference
+\begin{minipage}[t]{\textwidth}
+    \begin{center}
+    Delucchi, M.; Schaper, E.; Sachenkova, O.; Elofsson, A.; Anisimova, M.
+    \\\textbf{A New Census of Protein Tandem Repeats and Their Relationship with Intrinsic Disorder.}
+    \\Genes 2020, 11, 407.
+    \end{center}
+\end{minipage}
+
+%% Institution logo and QR Code
+\begin{minipage}[t]{\textwidth}
+    \begin{center}
+    \compactqrcode{img/qrcode}{}
+    \includegraphics[width=0.1\paperwidth]{img/zhaw_lsfm_ias_blau_en.jpg}
+    \includegraphics[width=0.05\paperwidth]{img/logo_SU.png}
+    \includegraphics[width=0.06\paperwidth]{img/logo_sib.png}    
+    \end{center}
+    
+\end{minipage}
 
 }
 
