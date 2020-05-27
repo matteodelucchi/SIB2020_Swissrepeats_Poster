@@ -58,7 +58,8 @@
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
 
-
+%% Links
+\RequirePackage{hyperref}
 
 %%%% SIZE COMMANDS
 
