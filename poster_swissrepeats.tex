@@ -6,7 +6,7 @@
 %%%% Original design from Mike Morrison
 %%%% https://twitter.com/mikemorrison
 
-\documentclass[a0paper,fleqn]{betterposter}
+\documentclass[widescreen,fleqn]{betterposter}
 
 %%%% Uncomment the following commands to customise the format
 
@@ -61,19 +61,21 @@
 
 \maincolumn{
 %%%% Main space
-
-\textbf{Protein Tandem Repeats} (TRs) originate by duplication and are involved in "housekeeping" functions. \\
-In viruses, TRs are found in proteins \textbf{essential for virulence}.
-\vspace{20mm}
-
-\begin{center}
-    \includegraphics[width=0.6\textwidth]{figures/virus_virushost_cake_all.png}
-\end{center}
+\begin{minipage}[t]{\textwidth}
+    \begin{center}
+        \textbf{Protein Tandem Repeats} (TRs) originate by duplication and are involved in "housekeeping" functions. \\
+        \vspace{5mm}
+        In viruses, TRs are found in proteins \textbf{essential for virulence}.
+        \vspace{15mm}
+        
+        \begin{center}
+            \includegraphics[width=0.6\textwidth]{figures/virus_virushost_cake_all.png}
+        \end{center}        
+    \end{center}
+\end{minipage}
 
 }{
 %%%% Bottom space
-% This fills the space between the content and the logo
-\vfill
 
 %% Paper reference
 \begin{minipage}[t]{\textwidth}
@@ -94,16 +96,16 @@ In viruses, TRs are found in proteins \textbf{essential for virulence}.
 \begin{minipage}[t]{\textwidth}
     \begin{center}
     \compactqrcode{img/qrcode}{}
-    \includegraphics[width=0.1\paperwidth]{img/zhaw_lsfm_ias_blau_en.jpg}
+    \includegraphics[width=0.105\paperwidth]{img/zhaw_lsfm_ias_blau_en.jpg}
     \includegraphics[width=0.05\paperwidth]{img/logo_SU.png}
-    \includegraphics[width=0.06\paperwidth]{img/logo_sib.png}    
+    \includegraphics[width=0.063\paperwidth]{img/logo_sib.png}    
     \end{center}
 \end{minipage}
 
 \begin{minipage}[t]{\textwidth}
     \begin{center}
         {\fontsize{35}{35} \selectfont 
-            \href{mailto:matteo.delucchi@zhaw.ch}{matteo.deluchi@zhaw.ch}
+            \href{mailto:matteo.delucchi@zhaw.ch}{matteo.delucchi@zhaw.ch}
         }
     \end{center}
 \end{minipage}
@@ -112,75 +114,25 @@ In viruses, TRs are found in proteins \textbf{essential for virulence}.
 
 }{
 %%%%%%%% LEFT COLUMN
-
-% \title{A New Census of Protein Tandem Repeats and Their Relationship with Intrinsic Disorder}
-% \author{Matteo Delucchi, Elke Schaper, Oxana Sachenkova, Arne Elofsson, Maria Anisimova}
-% \institution{ZHAW, Stockholm University and SIB}
-% % \author{Matteo Delucchi}
-% % \institution{ZHAW \& SIB}
-% % \author{Elke Schaper}
-% % \institution{ZHAW \& SIB}
-% % \author{Oxana Sachenkova}
-% % \institution{Stockholm University}
-% % \author{Arne Elofsson}
-% % \institution{Stockholm University}
-% % \author{Maria Anisimova}
-% % \institution{ZHAW \& SIB}
-
-% \section{Introduction}
-% Here is an itemised list:
-% \begin{itemize}
-% \item The first item.
-% \item The second item.
-% \item The third item.
-% \end{itemize}
-
-% \section{A Diagram}
-% Here is a diagram:
-% \begin{center}
-% % Linear regression
-% % Author: Henri Menke
-% % Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
-% % \includegraphics[width=\textwidth]{img/tikzexample1}
-% \end{center}
-
-% \section{Fundamental Theorem\\of Calculus}
-% If $f$ is continuous on the closed interval $[a,b]$ and $F$ is the indefinite integral of $f$ on $[a,b]$, then
-% \begin{equation}
-% \int_a^b f(x)\,\mathrm{d}x = F(b)-F(a).
-% \end{equation}
-
-% \section{Conclusion}
-% This is a great poster format!
-
-% %% This fills the space between the content and the logo
-% \vfill
-
-% %% Institution logo
-% \includegraphics[width=0.5\textwidth]{img/zhaw_lsfm_ias_blau_en.jpg}
-% \includegraphics[width=0.2\textwidth]{img/logo_SU.png}
-% \includegraphics[width=0.3\textwidth]{img/logo_sib.png}
 }{
 %%%%%%%% RIGHT COLUMN
-% \begin{itemize}
-%     \item Most of the known proteins contain TRs.
-%     \item Complex organisms are entriched with TRs.
-% \end{itemize}
 
 \begin{center}
-    \includegraphics[width=\textwidth]{figures/fig1_3D.png}
+    \includegraphics[width=0.35\textheight]{figures/fig1_3D_rotated.png}
 \end{center}
-Most of the known proteins contain TRs. A vast variation in TR lengths and unit copy numbers could be detected.
+Most of the known proteins contain TRs. A vast variation in TR lengths and unit copy numbers could be detected with a majority of proteins having >1 TR and a positive correlation between protein length and number of different TRs.
+Viruses have fewer TRs compared to their host and complex organisms are enriched with TRs.
 
 \begin{center}
-    \includegraphics[width=\textwidth]{figures/Mean_Prot_length_vs_Frac_TR.png}
+    \includegraphics[width=0.4\textheight]{figures/Mean_Prot_length_vs_Frac_TR.png}
 \end{center}
-Complex organisms are enriched with TRs.
+TR location is biased towards the sequence flanks for shorter TRs and they are enriched with disorder-promoting amino acids and are often found in proteins with intrinsic disorder regions.
+TR containing proteins are involved in transcription processes, structural organization, electron transport
+and ion-binding.
 
-TRs are enriched with disorder-promoting amino acids and are often found in proteins with intrinsic disorder regions.
-% \begin{center}
-%     \includegraphics[width=\textwidth]{figures/virus_virushost_cake_all.png}
-% \end{center}
+\begin{center}
+    \includegraphics[width=0.4\textheight]{figures/TR_disorder_overlap_overall_detail_and_venn.png}
+\end{center}
 
 }
 \end{document}
