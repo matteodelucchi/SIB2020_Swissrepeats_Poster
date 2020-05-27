@@ -22,15 +22,15 @@
 % Vertical margin
 %\setlength{\columnmarginhorizontal}{0.05\paperheight}
 % Horizontal margin for the main column
-%\setlength{\maincolumnmarginvertical}{0.15\paperheight}
+\setlength{\maincolumnmarginvertical}{0.05\paperheight}
 % Vertical margin for the main column
-%\setlength{\maincolumnmarginhorizontal}{0.15\paperheight}
+\setlength{\maincolumnmarginhorizontal}{0.05\paperheight}
 
 %% Changing font sizes
 % Text font
 %\renewcommand{\fontsizestandard}{\fontsize{28}{35} \selectfont}
 % Main column font
-%\renewcommand{\fontsizemain}{\fontsize{28}{35} \selectfont}
+\renewcommand{\fontsizemain}{\fontsize{110}{130} \selectfont}
 % Title font
 \renewcommand{\fontsizetitle}{\fontsize{60}{35} \selectfont}
 % Author font
@@ -62,24 +62,31 @@
 \maincolumn{
 %%%% Main space
 
-\textbf{Main finding} goes here,
-\\translated into \textbf{plain English}.
-\\\textbf{Emphasize} the important words.
+\textbf{Protein Tandem Repeats} (TRs) originate by duplication and are involved in "housekeeping" functions. \\
+In viruses, TRs are found in proteins \textbf{essential for virulence}.
+\vspace{20mm}
+
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/virus_virushost_cake_all.png}
+\end{center}
+
 }{
 %%%% Bottom space
-
-
-
-
-%% This fills the space between the content and the logo
+% This fills the space between the content and the logo
 \vfill
 
 %% Paper reference
 \begin{minipage}[t]{\textwidth}
     \begin{center}
-    Delucchi, M.; Schaper, E.; Sachenkova, O.; Elofsson, A.; Anisimova, M.
-    \\\textbf{A New Census of Protein Tandem Repeats and Their Relationship with Intrinsic Disorder.}
-    \\Genes 2020, 11, 407.
+        {\fontsize{35}{35} \selectfont 
+            Delucchi, M.; Schaper, E.; Sachenkova, O.; Elofsson, A.; Anisimova, M.
+        }
+        \\{\fontsize{45}{35} \selectfont 
+            \textbf{A New Census of Protein Tandem Repeats and Their Relationship with Intrinsic Disorder.}
+        }
+        \\{\fontsize{35}{35} \selectfont 
+            Genes 2020, 11, 407.
+        }
     \end{center}
 \end{minipage}
 
@@ -91,7 +98,14 @@
     \includegraphics[width=0.05\paperwidth]{img/logo_SU.png}
     \includegraphics[width=0.06\paperwidth]{img/logo_sib.png}    
     \end{center}
-    
+\end{minipage}
+
+\begin{minipage}[t]{\textwidth}
+    \begin{center}
+        {\fontsize{35}{35} \selectfont 
+            \href{mailto:matteo.delucchi@zhaw.ch}{matteo.deluchi@zhaw.ch}
+        }
+    \end{center}
 \end{minipage}
 
 }
@@ -99,70 +113,74 @@
 }{
 %%%%%%%% LEFT COLUMN
 
-\title{A New Census of Protein Tandem Repeats and Their Relationship with Intrinsic Disorder}
-\author{Matteo Delucchi, Elke Schaper, Oxana Sachenkova, Arne Elofsson, Maria Anisimova}
-\institution{ZHAW, Stockholm University and SIB}
-% \author{Matteo Delucchi}
-% \institution{ZHAW \& SIB}
-% \author{Elke Schaper}
-% \institution{ZHAW \& SIB}
-% \author{Oxana Sachenkova}
-% \institution{Stockholm University}
-% \author{Arne Elofsson}
-% \institution{Stockholm University}
-% \author{Maria Anisimova}
-% \institution{ZHAW \& SIB}
+% \title{A New Census of Protein Tandem Repeats and Their Relationship with Intrinsic Disorder}
+% \author{Matteo Delucchi, Elke Schaper, Oxana Sachenkova, Arne Elofsson, Maria Anisimova}
+% \institution{ZHAW, Stockholm University and SIB}
+% % \author{Matteo Delucchi}
+% % \institution{ZHAW \& SIB}
+% % \author{Elke Schaper}
+% % \institution{ZHAW \& SIB}
+% % \author{Oxana Sachenkova}
+% % \institution{Stockholm University}
+% % \author{Arne Elofsson}
+% % \institution{Stockholm University}
+% % \author{Maria Anisimova}
+% % \institution{ZHAW \& SIB}
 
-\section{Introduction}
-Here is an itemised list:
-\begin{itemize}
-\item The first item.
-\item The second item.
-\item The third item.
-\end{itemize}
+% \section{Introduction}
+% Here is an itemised list:
+% \begin{itemize}
+% \item The first item.
+% \item The second item.
+% \item The third item.
+% \end{itemize}
 
-\section{A Diagram}
-Here is a diagram:
-\begin{center}
-% Linear regression
-% Author: Henri Menke
-% Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
-% \includegraphics[width=\textwidth]{img/tikzexample1}
-\end{center}
+% \section{A Diagram}
+% Here is a diagram:
+% \begin{center}
+% % Linear regression
+% % Author: Henri Menke
+% % Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
+% % \includegraphics[width=\textwidth]{img/tikzexample1}
+% \end{center}
 
-\section{Fundamental Theorem\\of Calculus}
-If $f$ is continuous on the closed interval $[a,b]$ and $F$ is the indefinite integral of $f$ on $[a,b]$, then
-\begin{equation}
-\int_a^b f(x)\,\mathrm{d}x = F(b)-F(a).
-\end{equation}
+% \section{Fundamental Theorem\\of Calculus}
+% If $f$ is continuous on the closed interval $[a,b]$ and $F$ is the indefinite integral of $f$ on $[a,b]$, then
+% \begin{equation}
+% \int_a^b f(x)\,\mathrm{d}x = F(b)-F(a).
+% \end{equation}
 
-\section{Conclusion}
-This is a great poster format!
+% \section{Conclusion}
+% This is a great poster format!
 
-%% This fills the space between the content and the logo
-\vfill
+% %% This fills the space between the content and the logo
+% \vfill
 
-%% Institution logo
-\includegraphics[width=0.5\textwidth]{img/zhaw_lsfm_ias_blau_en.jpg}
-\includegraphics[width=0.2\textwidth]{img/logo_SU.png}
-\includegraphics[width=0.3\textwidth]{img/logo_sib.png}
+% %% Institution logo
+% \includegraphics[width=0.5\textwidth]{img/zhaw_lsfm_ias_blau_en.jpg}
+% \includegraphics[width=0.2\textwidth]{img/logo_SU.png}
+% \includegraphics[width=0.3\textwidth]{img/logo_sib.png}
 }{
 %%%%%%%% RIGHT COLUMN
+% \begin{itemize}
+%     \item Most of the known proteins contain TRs.
+%     \item Complex organisms are entriched with TRs.
+% \end{itemize}
 
-Here you can add \textbf{supplementary material}. For instance, a new diagram:
 \begin{center}
-% Commutative diagram with edges passing under/over
-% Author: Stefan Kottwitz, http://texblog.net/
-% Retrieved from: http://www.texample.net/tikz/examples/commutative-diagram/
-% \includegraphics[width=\textwidth]{img/tikzexample2}
+    \includegraphics[width=\textwidth]{figures/fig1_3D.png}
 \end{center}
+Most of the known proteins contain TRs. A vast variation in TR lengths and unit copy numbers could be detected.
 
-Some cute ducklings:
 \begin{center}
-% Picture of ducklings
-% Author: Magda Ehlers, https://www.pexels.com/@magda-ehlers-pexels
-% Retrieved from: https://www.pexels.com/photo/selective-focus-photo-of-flock-of-ducklings-perching-on-gray-concrete-pavement-1300355/
-% \includegraphics[width=\textwidth]{img/ducklings}
+    \includegraphics[width=\textwidth]{figures/Mean_Prot_length_vs_Frac_TR.png}
 \end{center}
+Complex organisms are enriched with TRs.
+
+TRs are enriched with disorder-promoting amino acids and are often found in proteins with intrinsic disorder regions.
+% \begin{center}
+%     \includegraphics[width=\textwidth]{figures/virus_virushost_cake_all.png}
+% \end{center}
+
 }
 \end{document}
