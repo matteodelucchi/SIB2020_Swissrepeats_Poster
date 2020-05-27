@@ -101,6 +101,10 @@
 \geometry{a0paper}
 }
 
+\DeclareOption{widescreen}{
+    %% 16:9 Aspect ratio
+    \geometry{paperwidth=900mm, paperheight=1600mm}
+}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 
@@ -165,10 +169,10 @@
 
 #1
 
-\vspace{1em}
+\vspace{0em}
 }
 \vfill	
-\begin{minipage}[t][0.25\textheight][b]{\textwidth}
+\begin{minipage}[t][0.15\textheight][b]{\textwidth}
 #2
 \end{minipage}
 }
