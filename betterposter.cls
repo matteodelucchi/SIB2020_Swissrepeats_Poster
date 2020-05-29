@@ -44,6 +44,7 @@
 \definecolor{theory}{RGB}{26,35,126}
 \definecolor{methods}{RGB}{140,22,22}
 \definecolor{intervention}{RGB}{255,213,79}
+\definecolor{zhaw}{HTML}{0062a7}
 
 \newcommand{\columnbackgroundcolor}{white}
 \newcommand{\columnfontcolor}{black}
@@ -104,6 +105,11 @@
 \DeclareOption{widescreen}{
     %% 16:9 Aspect ratio
     \geometry{paperwidth=900mm, paperheight=1600mm}
+    \renewcommand{\fontsizestandard}{\fontsize{40}{50} \selectfont}
+    \renewcommand{\fontsizemain}{\fontsize{105}{120} \selectfont}
+    \renewcommand{\fontsizetitle}{\fontsize{60}{60} \selectfont}
+    \renewcommand{\fontsizeauthor}{\fontsize{60}{50} \selectfont}
+    \renewcommand{\fontsizesection}{\fontsize{60}{90} \selectfont}
 }
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
